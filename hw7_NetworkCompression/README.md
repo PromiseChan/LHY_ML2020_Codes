@@ -2,6 +2,10 @@
 
 通过Architecture Design、Knowledge Distillation、Network Pruning和Weight Quantization这4种模型压缩策略，用一个非常小的model完成homework3中食物图片分类的任务。
 
+### 数据集
+
+天翼云盘/数据集/food-11.zip (1.08G)
+
 ## 1.Architecture Design
 
 MobileNet提出了Depthwise & Pointwise Convolution。我们在这里实现MobileNet v1这个比较小的network，后续使用Knowledge Distillation策略训练它，然后对它进行剪枝和量化。
