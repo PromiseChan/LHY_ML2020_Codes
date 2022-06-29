@@ -119,7 +119,6 @@ class StudentNet(nn.Module):
         return self.fc(out)
 
 
-
 def network_slimming(old_model, new_model):
     params = old_model.state_dict()
     new_params = new_model.state_dict()
@@ -129,11 +128,15 @@ def network_slimming(old_model, new_model):
     # 我們總共有7層CNN，因此逐一抓取選擇的neuron index們。
     for i in range(8):
         # 根據上表，我們要抓的gamma係數在cnn.{i}.1.weight內。
+        # γ 相当于 x*weight+b 里的weight
+        # {i} 表示第几个 cnn 卷积模块
+        #  1.weight 表示 单个模块内 第二层（batchnormal2D层）的weight
         importance = params[f'cnn.{i}.1.weight']
         # 抓取總共要篩選幾個neuron。
         old_dim = len(importance)
         new_dim = len(new_params[f'cnn.{i}.1.weight'])
         # 以Ranking做Index排序，較大的會在前面(descending=True)。
+        # dim 默认=-1 ,表示每一列内部按值排序，获取排序后的index，列于列之间按原来顺寻
         ranking = torch.argsort(importance, descending=True)
         # 把篩選結果放入selected_idx中。
         selected_idx.append(ranking[:new_dim])
