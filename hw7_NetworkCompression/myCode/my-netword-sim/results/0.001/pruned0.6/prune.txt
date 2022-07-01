@@ -1,0 +1,6 @@
+Configuration: 
+[33, 63, 83]
+Number of parameters: 
+372292
+threshold:tensor(2.3021e-06)Test accuracy: 
+tensor(0.9377)

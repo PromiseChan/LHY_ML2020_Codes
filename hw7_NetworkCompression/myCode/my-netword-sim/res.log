@@ -1,0 +1,153 @@
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.4276)
+layer index: 2 	 total channel: 64 	 remaining channel: 51
+layer index: 4 	 total channel: 128 	 remaining channel: 96
+layer index: 6 	 total channel: 256 	 remaining channel: 256
+Pre-processing Successful!
+
+Test set: Accuracy: 1330/1509 (88.1%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.5780)
+layer index: 2 	 total channel: 64 	 remaining channel: 33
+layer index: 4 	 total channel: 128 	 remaining channel: 77
+layer index: 6 	 total channel: 256 	 remaining channel: 248
+Pre-processing Successful!
+
+Test set: Accuracy: 1186/1509 (78.6%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.6573)
+layer index: 2 	 total channel: 64 	 remaining channel: 27
+layer index: 4 	 total channel: 128 	 remaining channel: 62
+layer index: 6 	 total channel: 256 	 remaining channel: 224
+Pre-processing Successful!
+
+Test set: Accuracy: 1083/1509 (71.8%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.7331)
+layer index: 2 	 total channel: 64 	 remaining channel: 22
+layer index: 4 	 total channel: 128 	 remaining channel: 53
+layer index: 6 	 total channel: 256 	 remaining channel: 193
+Pre-processing Successful!
+
+Test set: Accuracy: 874/1509 (57.9%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.8191)
+layer index: 2 	 total channel: 64 	 remaining channel: 19
+layer index: 4 	 total channel: 128 	 remaining channel: 42
+layer index: 6 	 total channel: 256 	 remaining channel: 162
+Pre-processing Successful!
+
+Test set: Accuracy: 496/1509 (32.9%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.8976)
+layer index: 2 	 total channel: 64 	 remaining channel: 18
+layer index: 4 	 total channel: 128 	 remaining channel: 27
+layer index: 6 	 total channel: 256 	 remaining channel: 134
+Pre-processing Successful!
+
+Test set: Accuracy: 344/1509 (22.8%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(0.9986)
+layer index: 2 	 total channel: 64 	 remaining channel: 13
+layer index: 4 	 total channel: 128 	 remaining channel: 18
+layer index: 6 	 total channel: 256 	 remaining channel: 103
+Pre-processing Successful!
+
+Test set: Accuracy: 486/1509 (32.2%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(1.1147)
+layer index: 2 	 total channel: 64 	 remaining channel: 11
+layer index: 4 	 total channel: 128 	 remaining channel: 13
+layer index: 6 	 total channel: 256 	 remaining channel: 65
+Pre-processing Successful!
+
+Test set: Accuracy: 476/1509 (31.5%)
+
+simpleconv3(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc): Linear(in_features=256, out_features=4, bias=True)
+)
+prun th=tensor(1.3042)
+layer index: 2 	 total channel: 64 	 remaining channel: 7
+layer index: 4 	 total channel: 128 	 remaining channel: 2
+layer index: 6 	 total channel: 256 	 remaining channel: 35
+Pre-processing Successful!
+
+Test set: Accuracy: 315/1509 (20.9%)
+
