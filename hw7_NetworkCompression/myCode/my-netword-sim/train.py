@@ -112,9 +112,12 @@ if args.resume:
 
 
 ## L1稀疏惩罚约束带来的梯度
+# loss =  m.weight.grad.data + λ*|w|
+# 对 w 求导 = m.weight.grad.data + λ*sign(w)
 def updateBN():
     for m in model.modules():
         if isinstance(m, nn.BatchNorm2d):
+            # torch.sign 是符号函数, 当 x> 0,  sign(x)=1, 当 x <0 ，sign(x)=-1,当 x =0 ，sign(x)=0
             m.weight.grad.data.add_(args.lamda * torch.sign(m.weight.data))
 
 
